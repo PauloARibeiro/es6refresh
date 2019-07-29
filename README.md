@@ -1,6 +1,6 @@
 ### const and let
 
-```
+```javascript
 const name = "John";
 let age = 24;
 ```
@@ -18,14 +18,14 @@ console.log(country);
 ```
 
 ### Arrow functions
-```
+```javascript
 const sayName = (name = "paulo") => {
   return `<h1>Hello my name is ${name}</h1>`
 }
 
 ```
 ### Template strings
-```
+```javascript
 const name = 'John';
 const component = `<h1>Hello my name is ${name}</h1>`;
 ```
@@ -40,7 +40,7 @@ console.log(sayName('John'));
 
 ```
 ### Rest
-```
+```javascript
 const names = (a, b, ...manyMoreArgs) => {
   console.log(a, b, manyMoreArgs); 
 }
@@ -50,7 +50,7 @@ names("john", "cindy", "paul", "mike", "guru");
 ```
 ### Spread
 
-```
+```javascript
 const firstRow = [1,2,3,4];
 const secondRow = [5,6,7,8];
 
@@ -62,7 +62,7 @@ const firstRowCopy = [...firstRow];
 [...document.querySelectorAll('div')];
 ```
 ###  Destructuring
-```
+```javascript
 const data = {
   name: "John",
   age: 25,
@@ -77,7 +77,7 @@ console.log(`Hello my name is ${name}, im ${age} years old and i'm from ${countr
 
 ```
 ### Foreach
-```
+```javascript
 let data = [{
   name: "John",
   age: 25,
@@ -92,7 +92,7 @@ console.log(data);
 
 ```
 ### Map
-```
+```javascript
 let data = [{
   name: "John",
   age: 25,
@@ -107,7 +107,7 @@ console.log(data);
 ```
 
 ### Filter
-```
+```javascript
 const data = [2, 3, 4, 2, 5, 2, 6, 2, 7];
 
 const newData = data.filter(item => item !== 2);
@@ -117,7 +117,7 @@ console.log(newData);
 
 ### Find
 
-```
+```javascript
 const data = [2, 3, 4, 2, 5, 2, 6, 2, 7];
 
 const newData = data.find(item => item > 5);
@@ -126,7 +126,7 @@ console.log(newData);
 ```
 
 ## Every 
-```
+```javascript
 const data = [2, 3, 4, 2, 5, 2, 6, 2, 7];
 
 const newData = data.every(item => item > 5);
@@ -138,7 +138,7 @@ console.log(newData2);
 ```
 
 ## Some
-```
+```javascript
 const data = [2, 3, 4, 2, 5, 2, 6, 2, 7];
 
 const newData = data.some(item => item > 5);
@@ -150,7 +150,7 @@ console.log(newData2);
 ```
 
 ## Reduce
-```
+```javascript
 const data = ["batman", "aquaman", "wonder woman"];
 
 const newData = data.reduce((prev, next) => {
