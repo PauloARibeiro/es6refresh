@@ -30,7 +30,7 @@ const name = 'John';
 const component = `<h1>Hello my name is ${name}</h1>`;
 ```
 ### Default params
-```
+```javascript
 const sayName = (name = "paulo") => {
   return `<h1>Hello my name is ${name}</h1>`
 }
@@ -125,7 +125,7 @@ const newData = data.find(item => item > 5);
 console.log(newData);
 ```
 
-## Every 
+###  Every 
 ```javascript
 const data = [2, 3, 4, 2, 5, 2, 6, 2, 7];
 
@@ -137,7 +137,7 @@ console.log(newData2);
 
 ```
 
-## Some
+### Some
 ```javascript
 const data = [2, 3, 4, 2, 5, 2, 6, 2, 7];
 
@@ -149,7 +149,7 @@ console.log(newData2);
 
 ```
 
-## Reduce
+### Reduce
 ```javascript
 const data = ["batman", "aquaman", "wonder woman"];
 
@@ -166,5 +166,41 @@ const newData = data.reduce((prev, next) => {
 })
 
 console.log(newData);
+
+```
+
+## Ternary
+```javascript
+const isTrue = true;
+
+isTrue ? 'It works' : 'No way';
+
+```
+
+## Classes
+```javascript
+class Cat {
+  constructor(name = 'no name', color ='no color', age = "no age" ){
+    this.name = name;
+    this.color = color;
+    this.age = age;
+  }
+  
+  sayName(){
+    return `My name is ${this.name}`;
+  }
+  
+  sayColor(){
+    return `My name is ${this.color}`;
+  }
+  
+  sayAge(){
+    return `My name is ${this.age}`;
+  }
+}
+
+const zebra = new Cat();
+const kitty = new Cat('Kitty', 'orange', 5);
+
 
 ```
