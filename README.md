@@ -5,7 +5,7 @@ const name = "John";
 let age = 24;
 ```
 
-```
+```javascript
 {
   const name = "John";
   let age = 24;
